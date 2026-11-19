@@ -26,3 +26,43 @@ docs/
 
 ## 典範文件檔名與用途
 
+vibe coding 過程常用來控制開發的文件檔名參考清冊。「本範本」欄打 ✔ 表示本範本採用，空白僅供參考。
+
+**Agent 指令**
+
+| 檔名 | 用途 | 本範本 | 常見來源 |
+|---|---|---|---|
+| `CLAUDE.md` | 專案層級 AI 指令，每次對話載入 | ✔ | Claude Code |
+| `CLAUDE.local.md` | 個人 AI 指令，不進版控 | | Claude Code |
+| `AGENTS.md` | 跨工具通用的 AI 指令 | | AGENTS.md 慣例 |
+| `docs/agent-guide.md` | 文件結構與變更流程 | ✔ | |
+
+**常駐文件（`docs/`）**
+
+| 檔名 | 用途 | 本範本 | 常見來源 |
+|---|---|---|---|
+| `glossary.md` | 術語表：專案用語、縮寫與中英對照 | ✔ | DDD |
+| `roadmap.md` | 總進程與未來方向 | ✔ | |
+| `process.md` | 開發流程：分支、審查、發布 | | |
+| `conventions.md` | 命名與程式風格規範，code review 的依據 | | |
+| `constitution.md` | 專案不可違反的原則 | | spec-kit |
+| `progress.md` | 進度與目前狀態，跨對話延續 | | Cline Memory Bank |
+| `reference/` | 外部資源參照 | ✔ | |
+| `operations/` | 部署、正式環境操作等影響線上的指令 | ✔ | |
+| `architecture/overview.md` | 系統全貌與技術棧（現況） | ✔ | |
+| `architecture/adr/` | 架構決策記錄 | ✔ | ADR |
+
+**變更文件（`docs/changes/`）**
+
+| 檔名 | 用途 | 本範本 | 常見來源 |
+|---|---|---|---|
+| `changes/` | 進行中的變更，一次只放一個階段 | ✔ | |
+| `proposal.md` | 需求提案（user story） | ✔ | OpenSpec |
+| `requirements.md` | 需求，與 `proposal.md` 同角色 | | Kiro |
+| `tech-stack.md` | 本次技術選型 | ✔ | |
+| `spec.md` | 規格，本範本以 BDD 格式撰寫 | ✔ | spec-kit |
+| `design.md` | 設計 | ✔ | Kiro、OpenSpec |
+| `plan.md` | 實作計畫；本範本只以 `<subject>-plan.md` 形式用於議題 | ✔ | spec-kit |
+| `tasks.md` | 任務清單與勾選狀態；議題用 `<subject>-tasks.md` | ✔ | Kiro、spec-kit、OpenSpec |
+| `<subject>-record.md` | 後記：改了什麼、為什麼、影響範圍 | ✔ | |
+| `changes-archive/` | 完成後歸檔 | ✔ | |
